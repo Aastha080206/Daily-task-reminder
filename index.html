@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Reminder Alarm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="boxed-heading">TaskTick ✔️</h1>
+  <h2>📅 Daily Task Reminder</h2>
+
+  <div class="container">
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Enter your task" required>
+      <input type="time" id="taskTime" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <div id="customAlert" class="modal">
+  <div class="modal-content">
+    <p id="alertText">Reminder!</p>
+    <button onclick="closeAlert()">OK</button>
+  </div>
+</div>
+
+
+  <audio id="alarmSound" src="alarm.mp4.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
